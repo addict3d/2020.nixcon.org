@@ -147,3 +147,32 @@ $tiers: (
 .card.platinum, .platinum > li {
   border-width: thick;
 }
+
+
+.sponsors {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.sponsor-card {
+  //background-color: $flat;
+  background-color: $bg;
+  color: $fg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  //height: 4rem;
+  .sponsor-logo {
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    img {
+      max-height: 100%;
+      width: auto;
+    }
+  }
+}
